@@ -1,0 +1,314 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>9. 代码块 &mdash; ReStructuredText Tutorial  文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="Sphinx标记结构" href="../mark/index.html" />
+    <link rel="prev" title="8. 注释" href="08_use_comment.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> ReStructuredText Tutorial
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../base/index.html">基础语法</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">中级语法</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="01_use_table.html">1. 表格学习</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02_use_horizontal_line.html">2. 水平线学习</a></li>
+<li class="toctree-l2"><a class="reference internal" href="03_use_footnote.html">3. 显式标记脚注</a></li>
+<li class="toctree-l2"><a class="reference internal" href="04_use_reference.html">4. 文献引用</a></li>
+<li class="toctree-l2"><a class="reference internal" href="05_use_super_link.html">5. 超链接</a></li>
+<li class="toctree-l2"><a class="reference internal" href="06_use_picture.html">6. 图片</a></li>
+<li class="toctree-l2"><a class="reference internal" href="07_use_reference_by_replace.html">7. 替换引用和定义</a></li>
+<li class="toctree-l2"><a class="reference internal" href="08_use_comment.html">8. 注释</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">9. 代码块</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#c">9.1. c++代码样例</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#bash">9.2. bash代码样例</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#python">9.3. python代码样例</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#json">9.4. json对象样例展示</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../mark/index.html">Sphinx标记结构</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">ReStructuredText Tutorial</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">中级语法</a> &raquo;</li>
+        
+      <li>9. 代码块</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/advance/09_use_code_block.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="topics-09-use-code-block">
+<span id="id1"></span><h1>9. 代码块<a class="headerlink" href="#topics-09-use-code-block" title="永久链接至标题">¶</a></h1>
+<div class="section" id="c">
+<h2>9.1. c++代码样例<a class="headerlink" href="#c" title="永久链接至标题">¶</a></h2>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp"></span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span><span class="o">*</span> <span class="n">argv</span><span class="p">[])</span> <span class="p">{</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">&quot;HelloWorld!);</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="bash">
+<h2>9.2. bash代码样例<a class="headerlink" href="#bash" title="永久链接至标题">¶</a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/bin/sh</span>
+<span class="c1">#================================================</span>
+<span class="c1">#FileName   : test.sh</span>
+<span class="c1">#Author     : wzx</span>
+<span class="c1">#Description:</span>
+<span class="c1">#DateTime   : 2019-05-02 11:00:00</span>
+<span class="c1">#Version    : V1.0</span>
+<span class="c1">#Other      :</span>
+<span class="c1">#================================================</span>
+
+<span class="k">for</span> opt in <span class="s2">&quot;</span><span class="si">${</span><span class="p">@</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">;</span> <span class="k">do</span>
+<span class="k">case</span> <span class="nv">$opt</span> in
+    --input-model<span class="o">=</span>*<span class="o">)</span>
+    <span class="nb">export</span> <span class="nv">input_model</span><span class="o">=</span><span class="s2">&quot;</span><span class="k">$(</span><span class="nb">echo</span> <span class="s2">&quot;</span><span class="nv">$opt</span><span class="s2">&quot;</span> <span class="p">|</span> cut -d <span class="s1">&#39;=&#39;</span> -f <span class="m">2</span>-<span class="k">)</span><span class="s2">&quot;</span>
+    <span class="p">;;</span>
+    --input-picture<span class="o">=</span>*<span class="o">)</span>
+    <span class="nb">export</span> <span class="nv">input_picture</span><span class="o">=</span><span class="s2">&quot;</span><span class="k">$(</span><span class="nb">echo</span> <span class="s2">&quot;</span><span class="nv">$opt</span><span class="s2">&quot;</span> <span class="p">|</span> cut -d <span class="s1">&#39;=&#39;</span> -f <span class="m">2</span>-<span class="k">)</span><span class="s2">&quot;</span>
+    <span class="p">;;</span>
+    --help<span class="o">)</span>
+    <span class="nb">echo</span> <span class="si">${</span><span class="nv">USAGE_LINE</span><span class="si">}</span>
+    <span class="nb">exit</span>
+    <span class="p">;;</span>
+    *<span class="o">)</span>
+    <span class="nb">echo</span> <span class="si">${</span><span class="nv">USAGE_LINE</span><span class="si">}</span>
+    <span class="nb">exit</span>
+    <span class="p">;;</span>
+<span class="k">esac</span>
+<span class="k">done</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="python">
+<h2>9.3. python代码样例<a class="headerlink" href="#python" title="永久链接至标题">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">try</span><span class="p">:</span>
+    <span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;/path/to/file&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
+<span class="k">finally</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">f</span><span class="p">:</span>
+        <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;/path/to/file&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
+
+<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;/Users/michael/gbk.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;gbk&#39;</span><span class="p">,</span> <span class="n">errors</span><span class="o">=</span><span class="s1">&#39;ignore&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="json">
+<h2>9.4. json对象样例展示<a class="headerlink" href="#json" title="永久链接至标题">¶</a></h2>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;BeJson&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;http://www.bejson.com&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;page&quot;</span><span class="p">:</span> <span class="mi">88</span><span class="p">,</span>
+    <span class="nt">&quot;isNonProfit&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nt">&quot;address&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;street&quot;</span><span class="p">:</span> <span class="s2">&quot;科技园路.&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;city&quot;</span><span class="p">:</span> <span class="s2">&quot;江苏苏州&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;country&quot;</span><span class="p">:</span> <span class="s2">&quot;中国&quot;</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;links&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Google&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;http://www.google.com&quot;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Baidu&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;http://www.baidu.com&quot;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;SoSo&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;http://www.SoSo.com&quot;</span>
+        <span class="p">}</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../mark/index.html" class="btn btn-neutral float-right" title="Sphinx标记结构" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="08_use_comment.html" class="btn btn-neutral float-left" title="8. 注释" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, 王竹兴
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

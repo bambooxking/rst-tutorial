@@ -1,0 +1,289 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>ReStructuredText 快速教程 &mdash; ReStructuredText Tutorial  文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="_static/translations.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
+    <link rel="next" title="基础语法" href="base/index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="#" class="icon icon-home"> ReStructuredText Tutorial
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="base/index.html">基础语法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advance/index.html">中级语法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mark/index.html">Sphinx标记结构</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">ReStructuredText Tutorial</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#">Docs</a> &raquo;</li>
+        
+      <li>ReStructuredText 快速教程</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="restructuredtext">
+<span id="topics-index"></span><h1>ReStructuredText 快速教程<a class="headerlink" href="#restructuredtext" title="永久链接至标题">¶</a></h1>
+<div class="section" id="id1">
+<h2>前言<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
+<p>这本书专注于 <strong>ReStructuredText</strong> 格式的最常用用法，以便读者能以最快时间掌握。</p>
+</div>
+<div class="section" id="id2">
+<h2>说明<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<p>全书分为三个部分：</p>
+<ul class="simple">
+<li>第一部分为基础语法篇，主要介绍 <strong>rst</strong> 文本的标题、段落、列表、块等；</li>
+<li>第二部分为进阶语法篇，主要介绍 <strong>rst</strong> 文本的表格、水平线、引用、超链接、图片、注释、代码块等；</li>
+<li>第三部分是Sphinx标记结构篇，主要介绍 <strong>rst</strong> 文本的标记结构如何使用。</li>
+</ul>
+<p>同时，这个教程也可当作 <strong>rst</strong> 文本的语法手册查询，使用左边栏的目录和搜索栏可以很方便的查阅。</p>
+</div>
+<div class="section" id="id3">
+<h2>写作工具<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
+<p>本书使用的reStructuredText标记语言，相对Markdown来说，在写书方面更有优势:</p>
+<ul class="simple">
+<li>使用sphnix能够自动生成目录和索引文件，方便查询和检索；</li>
+<li>有大量漂亮的HTML书籍主题模版，可为书籍轻松换肤（类似Wordpress的网站模版）；</li>
+<li>对于参考手册类书籍的编写在语法上更为便利（python官方帮助文档的使用者）；</li>
+</ul>
+</div>
+<hr class="docutils" />
+<div class="section" id="id4">
+<h2>文献参考<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="https://my-study-restructuredtext.readthedocs.io/en/latest/">My_Study_ReStructuredText</a></li>
+<li><a class="reference external" href="https://zh-sphinx-doc.readthedocs.io/en/latest/rest.html">Sphinx 使用手册</a></li>
+<li><a class="reference external" href="https://wzx3.github.io/2019/04/30/Sphinx-ReStructuredText%E5%88%B6%E4%BD%9C%E6%89%8B%E5%86%8C%E6%96%87%E6%A1%A3/">Sphinx+ReStructuredText制作手册文档</a></li>
+</ul>
+</div>
+<div class="section" id="id5">
+<h2>版权声明<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h2>
+<div class="admonition note">
+<p class="first admonition-title">注解</p>
+<p>本书为开源图书，版权归作者所有；欢迎下载及编辑(个人用途)，但未经作者同意必须保留此段声明，且不可用于商业用途，否则保留追究法律责任的权利。</p>
+<ul class="last simple">
+<li>作者：王竹兴</li>
+<li>博客：<a class="reference external" href="https://wzx3.github.io">https://wzx3.github.io</a></li>
+<li>Github地址：<a class="reference external" href="https://github.com/wzx3/rst-tutorial">https://github.com/wzx3/rst-tutorial</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="id6">
+<h2>目录<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="base/index.html">基础语法</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="base/01_use_title.html">1. 标题学习</a></li>
+<li class="toctree-l2"><a class="reference internal" href="base/02_use_paragraph.html">2. 段落学习</a></li>
+<li class="toctree-l2"><a class="reference internal" href="base/03_use_list.html">3. 列表学习</a></li>
+<li class="toctree-l2"><a class="reference internal" href="base/04_use_block.html">4. 块学习</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="advance/index.html">中级语法</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="advance/01_use_table.html">1. 表格学习</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advance/02_use_horizontal_line.html">2. 水平线学习</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advance/03_use_footnote.html">3. 显式标记脚注</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advance/04_use_reference.html">4. 文献引用</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advance/05_use_super_link.html">5. 超链接</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advance/06_use_picture.html">6. 图片</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advance/07_use_reference_by_replace.html">7. 替换引用和定义</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advance/08_use_comment.html">8. 注释</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advance/09_use_code_block.html">9. 代码块</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="mark/index.html">Sphinx标记结构</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="mark/01_use_toctree.html">1. toctree</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mark/02_use_inline_mark.html">2. 内联标记</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mark/03_use_paragraph_mark.html">3. 段落级别标记</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mark/04_use_table_content_mark.html">4. 表内容标记</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mark/05_use_display_code_mark.html">5. 显示代码</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mark/06_use_others.html">6. 其他标记</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="id7">
+<h1>索引<a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h1>
+<ul class="simple">
+<li><a class="reference internal" href="genindex.html"><span class="std std-ref">索引</span></a></li>
+<li><a class="reference internal" href="py-modindex.html"><span class="std std-ref">模块索引</span></a></li>
+<li><a class="reference internal" href="search.html"><span class="std std-ref">搜索页面</span></a></li>
+</ul>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="base/index.html" class="btn btn-neutral float-right" title="基础语法" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, 王竹兴
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
