@@ -38,7 +38,7 @@ ReStructuredText 快速教程
 
 - `My_Study_ReStructuredText <https://my-study-restructuredtext.readthedocs.io/en/latest/>`_ 
 - `Sphinx 使用手册 <https://zh-sphinx-doc.readthedocs.io/en/latest/rest.html>`_ 
-- `Sphinx+ReStructuredText制作手册文档 <https://wzx3.github.io/2019/04/30/Sphinx-ReStructuredText%E5%88%B6%E4%BD%9C%E6%89%8B%E5%86%8C%E6%96%87%E6%A1%A3/>`_
+- `Sphinx+ReStructuredText制作手册文档 <https://bambooxking.github.io/2019/04/30/Sphinx-ReStructuredText%E5%88%B6%E4%BD%9C%E6%89%8B%E5%86%8C%E6%96%87%E6%A1%A3/>`_
 
 版权声明
 ----
@@ -46,8 +46,8 @@ ReStructuredText 快速教程
     本书为开源图书，版权归作者所有；欢迎下载及编辑(个人用途)，但未经作者同意必须保留此段声明，且不可用于商业用途，否则保留追究法律责任的权利。
 
     - 作者：王竹兴
-    - 博客：https://wzx3.github.io
-    - Github地址：https://github.com/wzx3/rst-tutorial
+    - 博客：https://bambooxking.github.io
+    - Github地址：https://github.com/bambooxking/rst-tutorial
 
 目录
 ----
